@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="LMS1.CL.LeaveAvailabilityCL" Collapsed="true">
+    <Position X="5.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAABAACgAQAAoAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>LeaveCL\LeaveAvailabilityCL.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="LMS1.CL.LeaveCL" Collapsed="true">
+    <Position X="7" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAQAAABEASAAQAAgAAAAAAAAAQAQAABAgAEAQIABAAA=</HashCode>
+      <FileName>LeaveCL\LeaveCL.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="LMS1.CL.LeaveTypeCL" Collapsed="true">
+    <Position X="8.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAAAAABAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAEAAAAA=</HashCode>
+      <FileName>LeaveCL\LeaveTypeCL.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="LMS1.CL.MyEnum" Collapsed="true">
+    <Position X="5.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>MyEnum.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="LMS1.CL.EmployeeCL" Collapsed="true">
+    <Position X="1.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAEAAACBAAACgAAAAgAQAAAAEAACAAAEAgAABAAA=</HashCode>
+      <FileName>UserCL\EmployeeCL.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="LMS1.CL.FacultyCL" Collapsed="true">
+    <Position X="2.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAATEAAAA4AAAACAAAAAAAA=</HashCode>
+      <FileName>UserCL\FacultyCL.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="LMS1.CL.StaffCL" Collapsed="true">
+    <Position X="0.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAACAAAAAgAAAAAAAAAAAAA=</HashCode>
+      <FileName>UserCL\StaffCL.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="LMS1.CL.UserLoginCL" Collapsed="true">
+    <Position X="7" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAIAAAACAAAAAAAAAAAAAACAQAAAgEAAAA=</HashCode>
+      <FileName>UserCL\UserLoginCL.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

@@ -1,0 +1,32 @@
+INSERT INTO [LeaveManagementSystem].[dbo].[login_info]
+           ([employee_index_pk],[usernam],[password],[privilege])
+     VALUES
+           (1,'hasan','123',2);
+GO
+
+
+INSERT INTO [LeaveManagementSystem].[dbo].[login_info]
+           ([employee_index_pk],[username],[password],[privilege])
+     VALUES
+           (2,'faisal','123',1);
+GO
+
+
+INSERT INTO [LeaveManagementSystem].[dbo].[login_info]
+           ([employee_index_pk],[username],[password],[privilege])
+     VALUES
+           (3,'maruf','123',1);
+GO
+
+INSERT INTO [LeaveManagementSystem].[dbo].[login_info]
+           ([employee_index_pk],[username],[password],[privilege])
+     VALUES
+           (3,'ayon','123',1);
+GO
+
+
+INSERT INTO [LeaveManagementSystem].[dbo].[login_info]
+           ([employee_index_pk],[username],[password],[privilege])
+     VALUES
+           (3,'salauddin','123',3);
+GO
