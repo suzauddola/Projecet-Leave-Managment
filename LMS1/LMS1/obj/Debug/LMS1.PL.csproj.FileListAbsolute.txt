@@ -86,3 +86,15 @@ C:\Users\Sajid\Desktop\ADBMS Latest\LMS1\LMS1\LMS1\bin\LMS1.DL.pdb
 C:\Users\Sajid\Desktop\ADBMS Latest\LMS1\LMS1\LMS1\obj\Debug\ResolveAssemblyReference.cache
 C:\Users\Sajid\Desktop\ADBMS Latest\LMS1\LMS1\LMS1\obj\Debug\LMS1.dll
 C:\Users\Sajid\Desktop\ADBMS Latest\LMS1\LMS1\LMS1\obj\Debug\LMS1.pdb
+F:\Suzauddola Data\Project-Leave-Management\LMS1\LMS1\bin\LMS1.dll.config
+F:\Suzauddola Data\Project-Leave-Management\LMS1\LMS1\bin\LMS1.dll
+F:\Suzauddola Data\Project-Leave-Management\LMS1\LMS1\bin\LMS1.pdb
+F:\Suzauddola Data\Project-Leave-Management\LMS1\LMS1\bin\LMS1.BL.dll
+F:\Suzauddola Data\Project-Leave-Management\LMS1\LMS1\bin\LMS1.CL.dll
+F:\Suzauddola Data\Project-Leave-Management\LMS1\LMS1\bin\LMS1.DL.dll
+F:\Suzauddola Data\Project-Leave-Management\LMS1\LMS1\bin\LMS1.BL.pdb
+F:\Suzauddola Data\Project-Leave-Management\LMS1\LMS1\bin\LMS1.CL.pdb
+F:\Suzauddola Data\Project-Leave-Management\LMS1\LMS1\bin\LMS1.DL.pdb
+F:\Suzauddola Data\Project-Leave-Management\LMS1\LMS1\obj\Debug\LMS1.PL.csprojResolveAssemblyReference.cache
+F:\Suzauddola Data\Project-Leave-Management\LMS1\LMS1\obj\Debug\LMS1.dll
+F:\Suzauddola Data\Project-Leave-Management\LMS1\LMS1\obj\Debug\LMS1.pdb

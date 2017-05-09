@@ -10,20 +10,20 @@ namespace LMS1.DL
     public class CreateConnectionDL
     {
         public SqlConnection con = new SqlConnection();
-        
+
         public void createDbConnection()
         {
-            con.ConnectionString = "server=sajid-pc\\mysqlexpress;database=eLeave;trusted_connection=true";
+            con.ConnectionString = "server=DESKTOP-714C7LA;database=eLeave;trusted_connection=true";
         }
 
         /**
          * <summary> Initializing the ConnectionString of database</summary>
          * 
-         **/ 
+         **/
 
         public SqlConnection createDbConnection1()
         {
-            con.ConnectionString = "server=sajid-pc\\mysqlexpress;database=eLeave;trusted_connection=true";
+            con.ConnectionString = "server=DESKTOP-714C7LA;database=eLeave;trusted_connection=true";
             return con;
         }
 
@@ -33,7 +33,7 @@ namespace LMS1.DL
          * <param name="sql"> </param>
          * <returns> an integer</returns>
          * 
-         **/ 
+         **/
 
         public int executeQuery(string sql)
         {
@@ -47,7 +47,7 @@ namespace LMS1.DL
             }
             catch
             {
-                
+
             }
             finally
             {
@@ -63,7 +63,7 @@ namespace LMS1.DL
          * <param name="sql"> </param>
          * <returns> a dataset</returns>
          * 
-         **/ 
+         **/
         public DataSet executeQueryWithReader(string sql)
         {
             DataSet ds = new DataSet();
@@ -84,7 +84,7 @@ namespace LMS1.DL
                 con.Close();
             }
 
-            return ds;            
+            return ds;
         }
     }
 }

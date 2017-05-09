@@ -1,0 +1,442 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{886A2F02-C7DA-446B-BA0B-8EE00BF5C804}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>LMS1</RootNamespace>
+    <AssemblyName>LMS1</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <UseIISExpress>false</UseIISExpress>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="About.aspx" />
+    <Content Include="Account\ChangePassword.aspx" />
+    <Content Include="Account\ChangePasswordSuccess.aspx" />
+    <Content Include="Account\Login.aspx" />
+    <Content Include="Account\Register.aspx" />
+    <Content Include="css\pro_dropline.css" />
+    <Content Include="css\pro_dropline_ie.css" />
+    <Content Include="css\screen.css" />
+    <Content Include="Deny.aspx" />
+    <Content Include="HomePage.aspx" />
+    <Content Include="HomePageA.aspx" />
+    <Content Include="HomePageR.aspx" />
+    <Content Include="images\forms\bg_related_act.gif" />
+    <Content Include="images\forms\bubble_inner.gif" />
+    <Content Include="images\forms\bubble_left.gif" />
+    <Content Include="images\forms\bubble_right.gif" />
+    <Content Include="images\forms\choose-file.gif" />
+    <Content Include="images\forms\error_left.gif" />
+    <Content Include="images\forms\error_right.gif" />
+    <Content Include="images\forms\form_inp.gif" />
+    <Content Include="images\forms\form_inp_error.gif" />
+    <Content Include="images\forms\form_reset.gif" />
+    <Content Include="images\forms\form_select.gif" />
+    <Content Include="images\forms\form_select_small.gif" />
+    <Content Include="images\forms\form_submit.gif" />
+    <Content Include="images\forms\form_textarea.gif" />
+    <Content Include="images\forms\header_related_act.gif" />
+    <Content Include="images\forms\icon_calendar.jpg" />
+    <Content Include="images\forms\icon_edit.gif" />
+    <Content Include="images\forms\icon_list_arrow.gif" />
+    <Content Include="images\forms\icon_minus.gif" />
+    <Content Include="images\forms\icon_plus.gif" />
+    <Content Include="images\forms\lines_dotted_short.gif" />
+    <Content Include="images\forms\step_1.gif" />
+    <Content Include="images\forms\step_dark_left.gif" />
+    <Content Include="images\forms\step_dark_right.gif" />
+    <Content Include="images\forms\step_dark_round.gif" />
+    <Content Include="images\forms\step_light_left.gif" />
+    <Content Include="images\forms\step_light_right.gif" />
+    <Content Include="images\forms\step_light_round.gif" />
+    <Content Include="images\forms\upload_file.gif" />
+    <Content Include="images\login\icon_back_login.gif" />
+    <Content Include="images\login\inp_login.gif" />
+    <Content Include="images\login\loginbox_bg.png" />
+    <Content Include="images\login\login_bg.jpg" />
+    <Content Include="images\login\submit_login.gif" />
+    <Content Include="images\shared\blank.gif" />
+    <Content Include="images\shared\border_bit.jpg" />
+    <Content Include="images\shared\cal_th_repeat.jpg" />
+    <Content Include="images\shared\cal_top_bg.jpg" />
+    <Content Include="images\shared\cal_top_repeat.jpg" />
+    <Content Include="images\shared\checkbox.gif" />
+    <Content Include="images\shared\content_repeat.jpg" />
+    <Content Include="images\shared\corner_bottom_left.jpg" />
+    <Content Include="images\shared\corner_bottom_right.jpg" />
+    <Content Include="images\shared\corner_top_left.jpg" />
+    <Content Include="images\shared\corner_top_right.jpg" />
+    <Content Include="images\shared\icon_idlogo.jpg" />
+    <Content Include="images\shared\logo.gif" />
+    <Content Include="images\shared\logo.png" />
+    <Content Include="images\shared\nav\account_drop_bg.gif" />
+    <Content Include="images\shared\nav\account_line.gif" />
+    <Content Include="images\shared\nav\back_0.gif" />
+    <Content Include="images\shared\nav\back_1x.gif" />
+    <Content Include="images\shared\nav\Copy of pro_line_1.gif" />
+    <Content Include="images\shared\nav\divider.jpg" />
+    <Content Include="images\shared\nav\icon_acc_inbox.gif" />
+    <Content Include="images\shared\nav\icon_acc_personal.gif" />
+    <Content Include="images\shared\nav\icon_acc_projects.gif" />
+    <Content Include="images\shared\nav\icon_acc_settings.gif" />
+    <Content Include="images\shared\nav\icon_acc_stats.gif" />
+    <Content Include="images\shared\nav\nav_logout.gif" />
+    <Content Include="images\shared\nav\nav_myaccount.gif" />
+    <Content Include="images\shared\nav\pro_line_0x.gif" />
+    <Content Include="images\shared\nav\pro_line_1.gif" />
+    <Content Include="images\shared\nav\pro_line_2.gif" />
+    <Content Include="images\shared\nav\repeat.jpg" />
+    <Content Include="images\shared\side_shadowleft.jpg" />
+    <Content Include="images\shared\side_shadowright.jpg" />
+    <Content Include="images\shared\top_bg.jpg" />
+    <Content Include="images\shared\top_search_btn.gif" />
+    <Content Include="images\shared\top_search_inp.gif" />
+    <Content Include="images\shared\top_search_select.gif" />
+    <Content Include="images\shared\year_next.gif" />
+    <Content Include="images\shared\year_prev.gif" />
+    <Content Include="images\table\actions_slider_bg.gif" />
+    <Content Include="images\table\action_delete.gif" />
+    <Content Include="images\table\action_edit.gif" />
+    <Content Include="images\table\content_round_repeat.jpg" />
+    <Content Include="images\table\content_round_top.jpg" />
+    <Content Include="images\table\dropdown_actions.gif" />
+    <Content Include="images\table\icon_close_blue.gif" />
+    <Content Include="images\table\icon_close_green.gif" />
+    <Content Include="images\table\icon_close_red.gif" />
+    <Content Include="images\table\icon_close_yellow.gif" />
+    <Content Include="images\table\message_blue.gif" />
+    <Content Include="images\table\message_green.gif" />
+    <Content Include="images\table\message_red.gif" />
+    <Content Include="images\table\message_yellow.gif" />
+    <Content Include="images\table\paging_far_left.gif" />
+    <Content Include="images\table\paging_far_right.gif" />
+    <Content Include="images\table\paging_left.gif" />
+    <Content Include="images\table\paging_right.gif" />
+    <Content Include="images\table\select_number_rows.gif" />
+    <Content Include="images\table\table_header.jpg" />
+    <Content Include="images\table\table_header_checkbox.jpg" />
+    <Content Include="images\table\table_header_options.jpg" />
+    <Content Include="images\table\table_header_repeat.jpg" />
+    <Content Include="images\table\table_icon_1.gif" />
+    <Content Include="images\table\table_icon_2.gif" />
+    <Content Include="images\table\table_icon_3.gif" />
+    <Content Include="images\table\table_icon_4.gif" />
+    <Content Include="images\table\table_icon_5.gif" />
+    <Content Include="images\table\table_sort_arrow.gif" />
+    <Content Include="LeaveApply.aspx" />
+    <Content Include="LeaveApplyA.aspx" />
+    <Content Include="LeaveApplyR.aspx" />
+    <Content Include="LeaveHistory.aspx" />
+    <Content Include="LeaveHistoryA.aspx" />
+    <Content Include="LeaveHistoryR.aspx" />
+    <Content Include="LeaveStatus.aspx" />
+    <Content Include="LeaveStatusA.aspx" />
+    <Content Include="LeaveStatusR.aspx" />
+    <Content Include="LoginLMS.aspx" />
+    <Content Include="Logout.aspx" />
+    <Content Include="RecommendListR.aspx" />
+    <Content Include="Styles\Site.css" />
+    <Content Include="Default.aspx" />
+    <Content Include="Global.asax" />
+    <Content Include="Scripts\jquery-1.4.1-vsdoc.js" />
+    <Content Include="Scripts\jquery-1.4.1.js" />
+    <Content Include="Scripts\jquery-1.4.1.min.js" />
+    <Content Include="Web.config" />
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Recommend.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="About.aspx.cs">
+      <DependentUpon>About.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="About.aspx.designer.cs">
+      <DependentUpon>About.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\ChangePassword.aspx.cs">
+      <DependentUpon>ChangePassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\ChangePassword.aspx.designer.cs">
+      <DependentUpon>ChangePassword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\ChangePasswordSuccess.aspx.cs">
+      <DependentUpon>ChangePasswordSuccess.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\ChangePasswordSuccess.aspx.designer.cs">
+      <DependentUpon>ChangePasswordSuccess.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Register.aspx.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Register.aspx.designer.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Deny.aspx.cs">
+      <DependentUpon>Deny.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Deny.aspx.designer.cs">
+      <DependentUpon>Deny.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="HomePage.aspx.cs">
+      <DependentUpon>HomePage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HomePage.aspx.designer.cs">
+      <DependentUpon>HomePage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HomePageA.aspx.cs">
+      <DependentUpon>HomePageA.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HomePageA.aspx.designer.cs">
+      <DependentUpon>HomePageA.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HomePageR.aspx.cs">
+      <DependentUpon>HomePageR.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HomePageR.aspx.designer.cs">
+      <DependentUpon>HomePageR.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LeaveApply.aspx.cs">
+      <DependentUpon>LeaveApply.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LeaveApply.aspx.designer.cs">
+      <DependentUpon>LeaveApply.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LeaveApplyA.aspx.cs">
+      <DependentUpon>LeaveApplyA.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LeaveApplyA.aspx.designer.cs">
+      <DependentUpon>LeaveApplyA.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LeaveApplyR.aspx.cs">
+      <DependentUpon>LeaveApplyR.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LeaveApplyR.aspx.designer.cs">
+      <DependentUpon>LeaveApplyR.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LeaveHistory.aspx.cs">
+      <DependentUpon>LeaveHistory.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LeaveHistory.aspx.designer.cs">
+      <DependentUpon>LeaveHistory.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LeaveHistoryA.aspx.cs">
+      <DependentUpon>LeaveHistoryA.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LeaveHistoryA.aspx.designer.cs">
+      <DependentUpon>LeaveHistoryA.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LeaveHistoryR.aspx.cs">
+      <DependentUpon>LeaveHistoryR.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LeaveHistoryR.aspx.designer.cs">
+      <DependentUpon>LeaveHistoryR.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LeaveStatus.aspx.cs">
+      <DependentUpon>LeaveStatus.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LeaveStatus.aspx.designer.cs">
+      <DependentUpon>LeaveStatus.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LeaveStatusA.aspx.cs">
+      <DependentUpon>LeaveStatusA.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LeaveStatusA.aspx.designer.cs">
+      <DependentUpon>LeaveStatusA.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LeaveStatusR.aspx.cs">
+      <DependentUpon>LeaveStatusR.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LeaveStatusR.aspx.designer.cs">
+      <DependentUpon>LeaveStatusR.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LoginLMS.aspx.cs">
+      <DependentUpon>LoginLMS.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LoginLMS.aspx.designer.cs">
+      <DependentUpon>LoginLMS.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Logout.aspx.cs">
+      <DependentUpon>Logout.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Logout.aspx.designer.cs">
+      <DependentUpon>Logout.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MasterPage.master.cs">
+      <DependentUpon>MasterPage.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MasterPageA.Master.cs">
+      <DependentUpon>MasterPageA.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MasterPageA.Master.designer.cs">
+      <DependentUpon>MasterPageA.Master</DependentUpon>
+    </Compile>
+    <Compile Include="MasterPageR.Master.cs">
+      <DependentUpon>MasterPageR.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MasterPageR.Master.designer.cs">
+      <DependentUpon>MasterPageR.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RecommendListR.aspx.cs">
+      <DependentUpon>RecommendListR.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RecommendListR.aspx.designer.cs">
+      <DependentUpon>RecommendListR.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Site.Master.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site.Master.designer.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Recommend.aspx.cs">
+      <DependentUpon>Recommend.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Recommend.aspx.designer.cs">
+      <DependentUpon>Recommend.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="ApplicantPages\" />
+    <Folder Include="App_Data\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Account\Web.config" />
+    <Content Include="Site.Master" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\bl\LMS1.BL\LMS1.BL.csproj">
+      <Project>{20AC8B68-917C-4269-B9A2-2A3EA8585814}</Project>
+      <Name>LMS1.BL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CL\LMS1.CL\LMS1.CL.csproj">
+      <Project>{6EF2AAB0-ECFA-4E82-8429-6DC01C8F3930}</Project>
+      <Name>LMS1.CL</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="MasterPage.master" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="MasterPageA.Master" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="MasterPageR.Master" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>1172</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

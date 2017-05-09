@@ -23,3 +23,8 @@ C:\Personal Drives\LMS1\LMS1\CL\LMS1.CL\bin\LMS1.CL.pdb
 C:\Personal Drives\LMS1\LMS1\CL\LMS1.CL\obj\Debug\ResolveAssemblyReference.cache
 C:\Personal Drives\LMS1\LMS1\CL\LMS1.CL\obj\Debug\LMS1.CL.dll
 C:\Personal Drives\LMS1\LMS1\CL\LMS1.CL\obj\Debug\LMS1.CL.pdb
+F:\Suzauddola Data\Project-Leave-Management\LMS1\CL\LMS1.CL\bin\LMS1.CL.dll.config
+F:\Suzauddola Data\Project-Leave-Management\LMS1\CL\LMS1.CL\bin\LMS1.CL.dll
+F:\Suzauddola Data\Project-Leave-Management\LMS1\CL\LMS1.CL\bin\LMS1.CL.pdb
+F:\Suzauddola Data\Project-Leave-Management\LMS1\CL\LMS1.CL\obj\Debug\LMS1.CL.dll
+F:\Suzauddola Data\Project-Leave-Management\LMS1\CL\LMS1.CL\obj\Debug\LMS1.CL.pdb
