@@ -77,11 +77,43 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\Css\bootstrap-theme.css" />
+    <Content Include="Content\Css\bootstrap-theme.min.css" />
+    <Content Include="Content\Css\bootstrap.css" />
+    <Content Include="Content\Css\bootstrap.min.css" />
+    <Content Include="Content\Css\Site.css" />
+    <Content Include="Content\Fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
+    <Content Include="Content\Css\bootstrap-theme.css.map" />
+    <Content Include="Content\Css\bootstrap-theme.min.css.map" />
+    <Content Include="Content\Css\bootstrap.css.map" />
+    <Content Include="Content\Css\bootstrap.min.css.map" />
+    <Content Include="Content\Fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="Content\Fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="Content\Fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="Content\Fonts\glyphicons-halflings-regular.woff2" />
+    <None Include="Scripts\Js\jquery-1.10.2.intellisense.js" />
+    <Content Include="Scripts\Js\bootstrap.js" />
+    <Content Include="Scripts\Js\bootstrap.min.js" />
+    <Content Include="Scripts\Js\modernizr-2.6.2.js" />
+    <Content Include="Scripts\Js\npm.js" />
+    <Content Include="Scripts\Js\jquery-1.10.2.js" />
+    <Content Include="Scripts\Js\jquery-1.10.2.min.js" />
+    <None Include="Scripts\Js\jquery.validate-vsdoc.js" />
+    <Content Include="Scripts\Js\jquery.validate.js" />
+    <Content Include="Scripts\Js\jquery.validate.min.js" />
+    <Content Include="Scripts\Js\jquery.validate.unobtrusive.js" />
+    <Content Include="Scripts\Js\jquery.validate.unobtrusive.min.js" />
+    <Content Include="Scripts\Js\respond.min.js" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\LoginController.cs" />
+    <Compile Include="DLL\LoginLogic.cs" />
+    <Compile Include="Getway\Login.cs" />
+    <Compile Include="Getway\WebConfig.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -90,6 +122,7 @@
     <Compile Include="Models\Leave.cs" />
     <Compile Include="Models\LeaveAvailability.cs" />
     <Compile Include="Models\LeaveType.cs" />
+    <Compile Include="Models\MyEnum.cs" />
     <Compile Include="Models\Staff.cs" />
     <Compile Include="Models\UserLogin.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -97,6 +130,13 @@
   <ItemGroup>
     <Content Include="Views\web.config" />
     <Content Include="packages.config" />
+    <Content Include="Models\eLeave.cd" />
+    <Content Include="Scripts\Js\jquery-1.10.2.min.map" />
+    <Content Include="Views\_ViewStart.cshtml" />
+    <Content Include="Views\Shared\_Layout.cshtml" />
+    <Content Include="Views\Login\Index.cshtml" />
+    <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\Shared\_LoginPartial.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -106,9 +146,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Controllers\" />
-    <Folder Include="DLL\" />
-    <Folder Include="Getway\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
