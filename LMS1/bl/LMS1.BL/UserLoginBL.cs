@@ -53,9 +53,10 @@ namespace LMS1.BL
             string name = "User";
             if (ds.Tables[0].Rows.Count != 0)
             {
-                name = (string)ds.Tables[0].Rows[0]["name"];
-            }
+                name = (string) ds.Tables[0].Rows[0]["name"];
 
+                return name;
+            }
             return name;
         }
     }

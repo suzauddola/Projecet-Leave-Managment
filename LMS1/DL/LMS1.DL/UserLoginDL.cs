@@ -95,12 +95,10 @@ namespace LMS1.DL
             cmd.Parameters.Add("@employee_index", SqlDbType.VarChar).Value = employeeIndex;
             
             cmd.Connection = con;
-
             con.Open();
             DataTable myTable = new DataTable();
             myTable.Load(cmd.ExecuteReader());
             ds.Tables.Add(myTable);
-
             con.Close();
 
             return ds;
