@@ -4,4 +4,20 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<h2>Index</h2>
+
+<form ng-controller="LoginController">
+    <h2>Login</h2>
+    <table class="table-condensed">
+        <tr>
+            <th>Name</th>
+            <td><input type="text" ng-model="name" class="form-control" name="Name" /></td>
+        </tr>
+        <tr>
+            <th>Password</th>
+            <td><input type="password" ng-model="pass" class="form-control" name="Password" /></td>
+        </tr>
+        <tr>
+            <td><button name="Submit" type="submit" ng-click="login()" class="btn btn-default">Submit</button></td>
+        </tr>
+    </table>
+</form>
