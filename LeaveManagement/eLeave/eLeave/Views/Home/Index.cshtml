@@ -4,5 +4,7 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<h2>Welcome to eLeave Application</h2>
-<a href="../Login/Index.cshtml" class="glyphicon-link">go to Login</a>
+<div ng-controller="HomeCtrl">
+    <h2>Welcome to eLeave Application</h2> <h1> Mr {{EmpName}}</h1>
+    @*<a href="~/Login/Index" class="btn btn-default">go to Login</a>*@
+</div>

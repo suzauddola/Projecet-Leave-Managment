@@ -1,9 +1,8 @@
-﻿
-@{
-    ViewBag.Title = "Index";
-    Layout = "~/Views/Shared/_Layout.cshtml";
+﻿@{
+    ViewBag.Title = "Login";
+    //Layout = "";   
+    Layout = "~/Views/Shared/_LayoutLogin.cshtml";
 }
-
 
 <form ng-controller="LoginController">
     <h2>Login</h2>
@@ -20,4 +19,5 @@
             <td><button name="Submit" type="submit" ng-click="login()" class="btn btn-default">Submit</button></td>
         </tr>
     </table>
+    @*<b>{{msg}}</b>*@
 </form>

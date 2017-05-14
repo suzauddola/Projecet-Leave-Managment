@@ -100,7 +100,8 @@
     <Content Include="Content\Fonts\glyphicons-halflings-regular.woff2" />
     <None Include="Scripts\Js\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\App\App.js" />
-    <Content Include="Scripts\App\LoginController.js" />
+    <Content Include="Scripts\App\HomeCtrl.js" />
+    <Content Include="Scripts\App\LoginCtrl.js" />
     <Content Include="Scripts\Js\bootstrap.js" />
     <Content Include="Scripts\Js\bootstrap.min.js" />
     <Content Include="Scripts\Js\modernizr-2.6.2.js" />
@@ -187,6 +188,7 @@
     <Content Include="Scripts\Vendor\angular.min.js.map" />
     <Content Include="Scripts\Vendor\errors.json" />
     <Content Include="Scripts\Vendor\version.json" />
+    <Content Include="Views\Shared\_LayoutLogin.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

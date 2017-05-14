@@ -3,12 +3,14 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using eLeave.DLL;
 using eLeave.Models;
 
 namespace eLeave.Controllers
 {
     public class LoginController : Controller
     {
+        LoginLogic llogic = new LoginLogic();
         //
         // GET: /Login/
         public ActionResult Index()
@@ -24,29 +26,44 @@ namespace eLeave.Controllers
             return View();
         }
 
-        public UserLogin LoginApplication()
+        public JsonResult LoginApplication(string user, string pass)
         {
             var data = "where is data to see";
-            var value = new UserLogin()
+            var loginInfo = new UserLogin()
             {
-                UserName = "name",
-                Password = "pass"
-
+                UserName = user,
+                Password = pass,
             };
-            return value;
+            var loginData = llogic.CheckUserLogic(loginInfo);
+
+
+
+            if (loginData.Login == true /*&& Priviledge.SelectedValue == "Employee"*/)
+            {
+                string name = llogic.GetNameBl(loginData.EmployeeIndex);
+                Session["employeeName"] = name;
+                Session["login"] = "T";
+                Session["employeeIndex"] = loginData.EmployeeIndex;
+                Session["username"] = loginData.UserName;
+
+                var value = new
+                {
+                    EmpName = name,
+                    EmpIndex = loginData.EmployeeIndex,
+                    PrevilageId = loginData.Privilege,
+                    UserName = loginData.UserName,
+                    IsLogin = loginData.Login,
+                    msg = "User Founded"
+                };
+
+                return Json(value, JsonRequestBehavior.AllowGet);
+            }
+            else
+            {
+                var value = new { EmpName = "Not Found", msg = "User Not Found" };
+                return Json(value, JsonRequestBehavior.AllowGet);
+            }
         }
 
-        public UserLogin LoginApplication(string user, string pass)
-        {
-            var data = "where is data to see";
-            var value = new UserLogin()
-            {
-                UserName = "name",
-                Password = "pass"
-
-            };
-            return value;
-        }
-	
     }
 }
