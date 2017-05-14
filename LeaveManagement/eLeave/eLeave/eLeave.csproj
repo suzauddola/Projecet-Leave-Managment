@@ -101,6 +101,7 @@
     <None Include="Scripts\Js\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\App\App.js" />
     <Content Include="Scripts\App\HomeCtrl.js" />
+    <Content Include="Scripts\App\LeaveApplyCtrl.js" />
     <Content Include="Scripts\App\LoginCtrl.js" />
     <Content Include="Scripts\Js\bootstrap.js" />
     <Content Include="Scripts\Js\bootstrap.min.js" />
@@ -147,6 +148,7 @@
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\LeaveApplyController.cs" />
     <Compile Include="Controllers\LoginController.cs" />
     <Compile Include="DLL\LoginLogic.cs" />
     <Compile Include="Getway\Login.cs" />
@@ -189,6 +191,7 @@
     <Content Include="Scripts\Vendor\errors.json" />
     <Content Include="Scripts\Vendor\version.json" />
     <Content Include="Views\Shared\_LayoutLogin.cshtml" />
+    <Content Include="Views\LeaveApply\Index.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
