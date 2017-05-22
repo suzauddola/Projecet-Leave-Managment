@@ -1,0 +1,8 @@
+F:\Suzauddola Data\Project-Leave-Management\AttendanceMyProject\Attendance\bin\Attendance.dll.config
+F:\Suzauddola Data\Project-Leave-Management\AttendanceMyProject\Attendance\bin\Attendance.dll
+F:\Suzauddola Data\Project-Leave-Management\AttendanceMyProject\Attendance\bin\Attendance.pdb
+F:\Suzauddola Data\Project-Leave-Management\AttendanceMyProject\Attendance\obj\Debug\EmployeeAttendance.csprojResolveAssemblyReference.cache
+F:\Suzauddola Data\Project-Leave-Management\AttendanceMyProject\Attendance\obj\Debug\Attendance.dll
+F:\Suzauddola Data\Project-Leave-Management\AttendanceMyProject\Attendance\obj\Debug\Attendance.pdb
+F:\Suzauddola Data\Project-Leave-Management\AttendanceMyProject\Attendance\bin\Newtonsoft.Json.dll
+F:\Suzauddola Data\Project-Leave-Management\AttendanceMyProject\Attendance\bin\Newtonsoft.Json.xml
