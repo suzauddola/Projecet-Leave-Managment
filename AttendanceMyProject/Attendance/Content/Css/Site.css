@@ -1,0 +1,20 @@
+﻿body {
+}
+
+.center-body {
+    margin-top: 50px;
+    margin-left: 30px
+}
+.header-position {
+    font-size: xx-large;
+}
+.label-position {
+    text-align: right;
+}
+#home>.form-group>div>div {
+    margin: 10px 0;
+}
+.btn-position {
+    white-space:normal;
+    word-wrap: break-word;
+}
