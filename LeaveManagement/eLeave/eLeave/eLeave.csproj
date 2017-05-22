@@ -124,6 +124,7 @@
     <Content Include="Scripts\Vendor\angular-csp.css" />
     <Content Include="Scripts\Vendor\angular-loader.js" />
     <Content Include="Scripts\Vendor\angular-loader.min.js" />
+    <Content Include="Scripts\Vendor\angular-material.min.js" />
     <Content Include="Scripts\Vendor\angular-message-format.js" />
     <Content Include="Scripts\Vendor\angular-message-format.min.js" />
     <Content Include="Scripts\Vendor\angular-messages.js" />
@@ -142,6 +143,7 @@
     <Content Include="Scripts\Vendor\angular-touch.min.js" />
     <Content Include="Scripts\Vendor\angular.js" />
     <Content Include="Scripts\Vendor\angular.min.js" />
+    <Content Include="Scripts\Vendor\svg-assets-cache.js" />
     <Content Include="Scripts\Vendor\version.txt" />
     <Content Include="Web.config" />
   </ItemGroup>

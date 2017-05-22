@@ -12,9 +12,15 @@
     <script src="~/Scripts/Vendor/angular.min.js"></script>
     <script src="~/Scripts/Vendor/angular-resource.min.js"></script>
     <script src="~/Scripts/Vendor/angular-route.min.js"></script>
+    <script src="~/Scripts/Vendor/angular-animate.min.js"></script>
+    <script src="~/Scripts/Vendor/angular-aria.min.js"></script>
+    <script src="~/Scripts/Vendor/angular-messages.min.js"></script>
+    <script src="~/Scripts/Vendor/angular-material.min.js"></script>
+    <script src="~/Scripts/Vendor/svg-assets-cache.js"></script>
     <script src="~/Scripts/App/App.js"></script>
     <script src="../../Scripts/App/LoginCtrl.js"></script>
     <script src="~/Scripts/App/HomeCtrl.js"></script>
+    <script src="~/Scripts/App/LeaveApplyCtrl.js"></script>
     @RenderSection("script", required: false)
 </head>
 <body>
@@ -35,12 +41,12 @@
         </div>
     </div>
 
-<div class="container body-content">
-    @RenderBody()
-    <hr />
-    <footer>
-        <p>&copy; @DateTime.Now.Year - &copy; eLeave</p>
-    </footer>
-</div>
+    <div class="container body-content">
+        @RenderBody()
+        <hr />
+        <footer>
+            <p>&copy; @DateTime.Now.Year - &copy; eLeave</p>
+        </footer>
+    </div>
 </body>
 </html>

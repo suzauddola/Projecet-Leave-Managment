@@ -6,16 +6,17 @@
 }
 
 <section>
-    <form ng-controller="LoginController" action="/" method="post" class="form-horizontal">
+    <form ng-controller="LeaveApplyCtrl" action="/" method="post" class="form-horizontal">
         <div class="form-group">
-            <h3 class="control-label col-sm-3">Leave Apply Form</h3>
-            @*<h2>Leave Apply Form</h2>*@
+            <h3 class="control-label col-sm-3">Leave Apply Form</h3> @*<h2>Leave Apply Form</h2>*@
         </div>
         <div class="form-group">
             <label class="control-label col-sm-2" for="leaveType">Leave Type:</label>
             <div class="col-sm-10">
                 @*<input type="text" class="form-control" id="leaveType" placeholder="Select Leave">*@
-                <select ng-model="selectedName" ng-options="x for x in names"></select>
+                <select ng-model="selectedLeaveType" class="btn btn-default" id="leaveType" ng-options="x for x in names">
+                    <option label="..Select Leave Type.." selected="selected" value=""></option>
+                </select>
             </div>
         </div>
         <div class="form-group">
@@ -33,13 +34,19 @@
         <div class="form-group">
             <label class="control-label col-sm-2" for="endDate">Application Date:</label>
             <div class="col-sm-10">
-                <input type="datetime" class="form-control" id="endDate" placeholder="Select Emd Date">
+                @*<input type="datetime" class="form-control" id="endDate" placeholder="Select Emd Date">*@
+                <div flex-gt-xs>
+                    <md-datepicker id="LeaveApplyCtrl.endDate" ng-model="myDate" md-placeholder="Enter date"></md-datepicker>
+                </div>
             </div>
         </div>
         <div class="form-group">
             <label class="control-label col-sm-2" for="purpose">Purpose:</label>
             <div class="col-sm-10">
-                <input type="text" class="form-control" id="purpose" placeholder="Select Emd Date">
+                @*<input type="text" class="form-control" id="purpose" placeholder="Select Emd Date">*@
+                <select ng-model="selectedPurpose" class="btn btn-default" id="purpose" ng-options="p for p in purpose">
+                    <option label="... Select Purpose ..." selected="selected" value=""></option>
+                </select>
             </div>
         </div>
 
