@@ -19,76 +19,76 @@
 <body>
     <div class="container">
         <form id="home" runat="server" style="height: 100%">
-            
-            <div class="form-group" >
 
-                <div class="col-sm-12" style="padding: 0; height: 25%"> 
-                    <div class="col-sm-4 col-xs-4" >
+            <div class="form-group">
+
+                <div class="col-sm-12" style="padding: 0; height: 25%">
+                    <div class="col-sm-4 col-xs-4">
                         <button type="button" class="btn btn-success btn-position" onclick="return attendanceInfo();" style="height: 90px; padding-left: 0px; width: 100%">Attendance</button>
                     </div>
-                    <div class="col-sm-4 col-xs-4" >
-                        <asp:Button CssClass="btn btn-danger" Text="Time Card" style="height: 90px; width: 100%" runat="server"/>
+                    <div class="col-sm-4 col-xs-4">
+                        <button type="button" class="btn btn-danger btn-position" onclick="return TimeCard();" style="height: 90px; padding-left: 0px; width: 100%">Time Card</button>
                     </div>
-                    <div class="col-sm-4 col-xs-4" >
-                        <asp:Button CssClass="btn btn-success" Text="Leave" style="height: 90px; width: 100%" runat="server"/>
+                    <div class="col-sm-4 col-xs-4">
+                        <asp:Button CssClass="btn btn-success" Text="Leave" Style="height: 90px; width: 100%" runat="server" />
                     </div>
 
                 </div>
 
             </div>
-            
+
             <div class="form-group">
-                <div class="col-sm-12" style="padding: 0; height: 25%"> 
-                    <div class="col-sm-4 col-xs-4" >
-                        <asp:Button CssClass="btn btn-success" Text="User Info" style="height: 90px; width: 100%" runat="server"/>
+                <div class="col-sm-12" style="padding: 0; height: 25%">
+                    <div class="col-sm-4 col-xs-4">
+                        <asp:Button CssClass="btn btn-success" Text="User Info" Style="height: 90px; width: 100%" runat="server" />
                     </div>
-                    <div class="col-sm-4 col-xs-4" >
-                        <asp:Button CssClass="btn btn-danger" Text="Two" style="height: 90px; width: 100%" runat="server"/>
+                    <div class="col-sm-4 col-xs-4">
+                        <asp:Button CssClass="btn btn-danger" Text="Two" Style="height: 90px; width: 100%" runat="server" />
                     </div>
-                    <div class="col-sm-4 col-xs-4" >
-                        <asp:Button CssClass="btn btn-success" Text="Three" style="height: 90px; width: 100%" runat="server"/>
+                    <div class="col-sm-4 col-xs-4">
+                        <asp:Button CssClass="btn btn-success" Text="Three" Style="height: 90px; width: 100%" runat="server" />
                     </div>
                 </div>
             </div>
 
             <div class="form-group">
-                <div class="col-sm-12" style="padding: 0; height: 25%"> 
-                    <div class="col-sm-4 col-xs-4" >
-                        <asp:Button CssClass="btn btn-success" Text="One" style="height: 90px; width: 100%" runat="server"/>
+                <div class="col-sm-12" style="padding: 0; height: 25%">
+                    <div class="col-sm-4 col-xs-4">
+                        <asp:Button CssClass="btn btn-success" Text="One" Style="height: 90px; width: 100%" runat="server" />
                     </div>
-                    <div class="col-sm-4 col-xs-4" >
-                        <asp:Button CssClass="btn btn-danger" Text="Two" style="height: 90px; width: 100%" runat="server"/>
+                    <div class="col-sm-4 col-xs-4">
+                        <asp:Button CssClass="btn btn-danger" Text="Two" Style="height: 90px; width: 100%" runat="server" />
                     </div>
-                    <div class="col-sm-4 col-xs-4" >
-                        <asp:Button CssClass="btn btn-success" Text="Three" style="height: 90px; width: 100%" runat="server"/>
-                    </div>
-                </div>
-            </div>
-
-            <div class="form-group">
-                <div class="col-sm-12" style="padding: 0; height: 25%"> 
-                    <div class="col-sm-4 col-xs-4" >
-                        <asp:Button CssClass="btn btn-success" Text="One" style="height: 90px; width: 100%" runat="server"/>
-                    </div>
-                    <div class="col-sm-4 col-xs-4" >
-                        <asp:Button CssClass="btn btn-danger" Text="Two" style="height: 90px; width: 100%" runat="server"/>
-                    </div>
-                    <div class="col-sm-4 col-xs-4" >
-                        <asp:Button CssClass="btn btn-success" Text="Three" style="height: 90px; width: 100%" runat="server"/>
+                    <div class="col-sm-4 col-xs-4">
+                        <asp:Button CssClass="btn btn-success" Text="Three" Style="height: 90px; width: 100%" runat="server" />
                     </div>
                 </div>
             </div>
 
             <div class="form-group">
-                <div class="col-sm-12" style="padding: 0; height: 25%"> 
-                    <div class="col-sm-4 col-xs-4" >
-                        <asp:Button CssClass="btn btn-success" Text="One" style="height: 90px; width: 100%" runat="server"/>
+                <div class="col-sm-12" style="padding: 0; height: 25%">
+                    <div class="col-sm-4 col-xs-4">
+                        <asp:Button CssClass="btn btn-success" Text="One" Style="height: 90px; width: 100%" runat="server" />
                     </div>
-                    <div class="col-sm-4 col-xs-4" >
-                        <asp:Button CssClass="btn btn-danger" Text="Two" style="height: 90px; width: 100%" runat="server"/>
+                    <div class="col-sm-4 col-xs-4">
+                        <asp:Button CssClass="btn btn-danger" Text="Two" Style="height: 90px; width: 100%" runat="server" />
                     </div>
-                    <div class="col-sm-4 col-xs-4" >
-                        <asp:Button CssClass="btn btn-success" Text="Three" style="height: 90px; width: 100%" runat="server"/>
+                    <div class="col-sm-4 col-xs-4">
+                        <asp:Button CssClass="btn btn-success" Text="Three" Style="height: 90px; width: 100%" runat="server" />
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="col-sm-12" style="padding: 0; height: 25%">
+                    <div class="col-sm-4 col-xs-4">
+                        <asp:Button CssClass="btn btn-success" Text="One" Style="height: 90px; width: 100%" runat="server" />
+                    </div>
+                    <div class="col-sm-4 col-xs-4">
+                        <asp:Button CssClass="btn btn-danger" Text="Two" Style="height: 90px; width: 100%" runat="server" />
+                    </div>
+                    <div class="col-sm-4 col-xs-4">
+                        <asp:Button CssClass="btn btn-success" Text="Three" Style="height: 90px; width: 100%" runat="server" />
                     </div>
                 </div>
             </div>
@@ -142,6 +142,9 @@
 
     function attendanceInfo() {
         window.location = "Attendance.aspx";
+    }
+    function TimeCard() {
+        window.location = "TimeCard.aspx";
     }
 </script>
 </html>

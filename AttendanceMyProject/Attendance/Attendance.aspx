@@ -18,15 +18,22 @@
 <body>
     <form id="form1" runat="server">
         <div class="container">
-            <button type="Submit" class="btn btn-success btn-position" onclick="return Check();" style="height: 90px; padding-left: 0px; width: 100%">Check In</button>
+            <div style="position: absolute; top: 50%; left:50%; transform: translate(-50%,-50%);">
+                <button type="Submit" id="toggle" class="btn btn-success btn-position" onclick="return Check();" style="height: 130px; width: 130px">Check In</button>                
+            </div>
         </div>
     </form>
 </body>
 <script type="text/javascript">
+    //document.getElementById("toggle").addClass("btn-success");
+    //$('#toggle').addClass('btn-success');
+    
     function Check() {
         var info = localStorage.getItem('userInfo');
         var userData = JSON.parse(info);
-        var userInfo = {
+        $(this).toggleClass('btn btn-danger btn-position');
+        
+        /*var userInfo = {
             "com_code": userData.com_code,
             "emp_designation": userData.emp_designation,
             "emp_id": userData.emp_id,
@@ -35,7 +42,7 @@
             "user_id": userData.user_id,
             "user_name": userData.user_name,
             "user_type": userData.user_type
-        };
+        };*/
         $.ajax({
             type: "POST",
             url: "Attendance.aspx/SaveAttendance",
@@ -49,7 +56,16 @@
         });
     }
     function onSucceed(data, currentContext, methodName) {
-        console.log(data);
+        if (data.d === "Success") {
+
+            $("#toggle").text("Check Out");
+            //$("#toggle").innerHTML = "Check Out";
+            //$('#toggle').on('click', '.btn', function () {
+            //    $(this).addClass('btn-danger').siblings().removeClass('btn-success').addClass('btn-success');
+            //});
+            $("#toggle").addClass("btn-danger").siblings().removeClass('btn-success').addClass('btn-danger');
+        }
+        console.log(data.d);
     }
     function onError(data, currentContext, methodName) {
         console.log(data);
