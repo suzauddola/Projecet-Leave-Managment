@@ -71,6 +71,7 @@
         if (data.d.user_id !== null) {
             //document.getElementById('txtTotal').value = results.d;
             var userData = JSON.stringify(data.d);
+
             localStorage.setItem('userInfo', userData);
             window.location = "Index.aspx";
         } else {

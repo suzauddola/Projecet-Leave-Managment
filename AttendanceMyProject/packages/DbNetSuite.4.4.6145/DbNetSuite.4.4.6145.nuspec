@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>DbNetSuite</id>
+    <version>4.4.6145</version>
+    <title>DbNetSuite</title>
+    <authors>DbNetLink Limited</authors>
+    <owners>DbNetLink Limited</owners>
+    <projectUrl>http://www.dbnetsuite.com//dbnetsuite/nuget.aspx</projectUrl>
+    <iconUrl>http://www.dbnetlink.net/img/dbnetsuite48.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>AJAX database driven web reporting and editing components. Can be implented as an MVC view, Web form server control or client-side JavaScript object.</description>
+    <summary />
+    <copyright>Copyright 2016</copyright>
+    <tags>AJAX Grid Reporting</tags>
+  </metadata>
+</package>

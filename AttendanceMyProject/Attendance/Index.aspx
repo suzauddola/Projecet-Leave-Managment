@@ -135,10 +135,10 @@
 <script>
     var data = localStorage.getItem('userInfo');
     var userData = JSON.parse(data);
-    document.getElementById("UserId").innerText = userData.emp_id;
-    document.getElementById("NameOfUser").innerText = userData.user_name;
-    document.getElementById("UserType").innerText = userData.user_type;
-    document.getElementById("Designation").innerText = userData.emp_designation;
+    //document.getElementById("UserId").text = userData.emp_id;
+    document.getElementById("NameOfUser").text = userData.user_name;
+    /*document.getElementById("UserType").innerText = userData.user_type;
+    document.getElementById("Designation").innerText = userData.emp_designation;*/
 
     function attendanceInfo() {
         window.location = "Attendance.aspx";
