@@ -16,16 +16,38 @@
     <script src="Content/Js/bootstrap.min.js"></script>
 </head>
 <body>
-    <form id="form1" runat="server">
+    <form id="form1">
         <div class="container" style="margin-top: 50px">
-            <div>
-                <label>Name : </label>
-                <label id="NameOfUser"></label>    
+            <div class="modal-header">
+                <div class="row" style="display: flex">
+                    <label class="col-md-5" style="text-align: right">Name : </label>
+                    <label class="col-md-3" id="NameOfUser"></label>
+                </div>
+                <div class="row" style="display: flex">
+                    <label class="col-md-5" style="text-align: right">Month : </label>
+                    <select id="Month" class="btn col-md-3">
+                        <option value="January">January</option>
+                        <option value="February">February</option>
+                        <option value="March">March</option>
+                        <option value="April">April</option>
+                        <option value="May" selected="selected">May</option>
+                        <option value="June">June</option>
+                        <option value="July">July</option>
+                        <option value="August">August</option>
+                        <option value="September">September</option>
+                        <option value="October">October</option>
+                        <option value="November">November</option>
+                        <option value="December">December</option>
+                    </select>
+                </div>
+                <div class="row" style="text-align: right">
+                    <button type="button" onclick="return FilterByMonth();" class="btn btn-primary" OnClientClick="return false;">Preview</button>
+                </div>
             </div>
-            
+
             <div>
                 <table class="table table-responsive table-bordered">
-                    <thead >
+                    <thead>
                         <tr>
                             <th class="btn-primary">Date</th>
                             <th class="btn-primary">In Time</th>
@@ -33,21 +55,27 @@
                             <th class="btn-primary">Status</th>
                         </tr>
                     </thead>
-                    <tbody style="color: #080808; background-color: #dff0d8; border-color: #333;" ></tbody>
+                    <tbody style="color: #080808; background-color: #dff0d8; border-color: #333;"></tbody>
                 </table>
             </div>
         </div>
     </form>
 </body>
-    <script type="text/javascript">
+<script type="text/javascript">
+    
+    var data = localStorage.getItem('userInfo');
+    var userData = JSON.parse(data);
+    document.getElementById("NameOfUser").innerHTML = userData.user_name;
+    
+    function FilterByMonth() {
+
+        var cMonth = document.getElementById("Month");
+
         var data = localStorage.getItem('userInfo');
         var userData = JSON.parse(data);
-        //document.getElementById("UserId").text = userData.emp_id;
-        document.getElementById("NameOfUser").innerHTML = userData.user_name;
-        /*document.getElementById("UserType").innerText = userData.user_type;
-        document.getElementById("Designation").innerText = userData.emp_designation;*/
+        
 
-        var userData = {
+        var userJson = {
             "com_code": userData.com_code,
             "emp_designation": userData.emp_designation,
             "emp_id": userData.emp_id,
@@ -58,12 +86,12 @@
             "user_type": userData.user_type
         };
 
-        var userInfo = JSON.stringify(userData);
+        var userInfo = JSON.stringify(userJson);
 
         $.ajax({
             type: "POST",
             url: "TimeCard.aspx/UserTimeCard",
-            data: "{ userInfo: '" + userInfo + "'}",
+            data: "{ userInfo: '" + userInfo + "',cMonth: '" + cMonth.value + "'}",
             contentType: "application/json; charset=utf-8",
             dataType: "json",
             async: "true",
@@ -71,32 +99,28 @@
             success: onSucceed,
             Error: onError
         });
-        function onSucceed(data, currentContext, methodName) {
-            console.log(data.d);
+    }
+    function onSucceed(data, currentContext, methodName) {
+        //console.log(data.d);
+        //localStorage.setItem("trInfo", data.d);
+        //var trData = JSON.stringify(data.d);
+        //localStorage.setItem('trInfo', userData);
+        var json = data.d;
+        var tr;
+        $("tbody").html("");
+        for (var i = 0; i < json.length; i++) {
+            tr = $('<tr/>');
+            tr.append("<td>" + json[i].Date + "</td>");
+            tr.append("<td>" + json[i].InTime + "</td>");
+            tr.append("<td>" + json[i].OutTime + "</td>");
+            tr.append("<td>" + json[i].Status + "</td>");
+            $('tbody').append(tr);
         }
-        function onError(data, currentContext, methodName) {
-            console.log(data);
-        }
+        //trInfo = tr;
+    }
+    function onError(data, currentContext, methodName) {
+        console.log(data);
+    }
 
-       // $(document).ready(function () {
-            var json = [
-                { "Date": "22 Apr 2017", "In_Time": "00:00", "Out_Time": "00:00", "Status": "Absent" },
-                { "Date": "23 Apr 2017", "In_Time": "00:00", "Out_Time": "00:00", "Status": "Absent" },
-                { "Date": "24 Apr 2017", "In_Time": "00:00", "Out_Time": "00:00", "Status": "Absent" },
-                { "Date": "25 Apr 2017", "In_Time": "00:00", "Out_Time": "00:00", "Status": "Absent" },
-                { "Date": "26 Apr 2017", "In_Time": "00:00", "Out_Time": "00:00", "Status": "Absent" },
-                { "Date": "27 Apr 2017", "In_Time": "00:00", "Out_Time": "00:00", "Status": "Absent" }
-            ];
-            var tr;
-            for (var i = 0; i < json.length; i++) {
-                tr = $('<tr/>');
-                tr.append("<td>" + json[i].Date + "</td>");
-                tr.append("<td>" + json[i].In_Time + "</td>");
-                tr.append("<td>" + json[i].Out_Time + "</td>");
-                tr.append("<td>" + json[i].Status + "</td>");
-                $('tbody').append(tr);
-            }
-        //});
-
-    </script>
+</script>
 </html>

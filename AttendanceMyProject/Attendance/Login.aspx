@@ -34,7 +34,7 @@
                 <asp:Label class="control-label col-sm-2 label-position" runat="server"></asp:Label>
                 <div class="col-sm-5">
                     <%--<asp:Button Text="Submit" CssClass="btn btn-default" OnClick="LoginSubmit" runat="server" />--%>
-                    <button type="button" class="btn btn-default" onclick="return FindUserInfo();">submit</button>
+                    <button type="button" class="btn btn-default" onclick="FindUserInfo();" OnClientClick="return false;">submit</button>
                 </div>
             </div>
             <div class="row form-group">
@@ -64,7 +64,6 @@
                 Error: onError
             });
         }
-        
     }
     function onSucceed(data, currentContext, methodName) {
         document.getElementById('name').value = document.getElementById('pass').value = "";
